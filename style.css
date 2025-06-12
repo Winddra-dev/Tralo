@@ -48,8 +48,8 @@
     height: auto;
   }
   .logo-img:hover:hover {
-    transition: transform 0.5s ease;
-    transform: rotateY(360deg);
+    transition: transform 0.9s ease;
+    transform: rotate(1440deg);
   }
   .nav-desktop {
     display: flex;
@@ -100,7 +100,11 @@
   .hero-img {
     max-width: 50%;
   }
-  
+  .hero-img:hover:hover {
+  transition: transform 0.5s ease;
+  transform: rotate(3960deg);
+  }
+
   /* Sections */
   .section {
     padding: 3rem 1rem;
@@ -126,6 +130,10 @@
   .section-img:hover {
     transform: scale(0.9);
     transition: all 0.3s ease-in-out;
+  }
+  #tentang-kami {
+    background-image: url(asset/download.png);
+    color: #fff;
   }
   .tentang-content {
     padding: 40px;
@@ -162,47 +170,10 @@
       width: 100%;
       margin: 0 auto;
     }
-    #Contact td {
-        align-content: space-between;
+    .medsos h1 {
+      font-size: x-small;
     }
   }
-  #Contact {
-    justify-content: space-between;
-    margin: 90px;
-    grid-row-start: 6;
-    grid-row-end: 6;
-    row-gap: 16px;
-    padding-top: 1px;
-    padding: 16px 0;
-    padding-bottom: 16px;
-    padding-block: 40px 16px 40px 16px;
-    content: 1600px;
-    color: rgb(50, 56, 54);
-    background-color: brown;
-}
-#Contact th{
-    size: 200px;
-}
-#Contact img{
-    width: 40px;
-    text-decoration: none;
-    color: black;
-    padding: 5px 20px;
-    border: 1px solid;
-    transition: 0.6s;
-    box-shadow: 4px 3px 3px;
-    padding: 0.6rem;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-#Contact tr {
-
-}
-#Contact td, img :hover{
-    background-color: #fff;
-    color: #000;
-}
 .cu-button {
     text-decoration: none;
     color: black;
@@ -216,30 +187,29 @@
     transition: background 0.3s ease;
     background-color: #fff;
 }
-.cu-button:hover {
-    background: 
-}
 .logo {
-    width: 40px;
+    width: 60px;
     text-decoration: none;
-    color: black;
-    background-color: #fff;
-    padding: 5px 20px;
-    border: 1px solid;
-    transition: 0.6s;
-    box-shadow: 4px 3px 3px;
-    padding: 0.6rem;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background 0.3s ease;
 }
 #medsos {
     padding: 5px 20px;
-    justify-content: space-between;
 }
 .medsos h1{
     color: #fff;
+    font-family: 'True Typewriter';
+    font-size: 48px;
 }
 .medsos {
     background-color: brown;
+}
+.medsos-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+  margin-top: 2rem;
+}
+
+@font-face {
+  font-family: 'True Typewriter';
+  src: url(Font/Truetypewriter\ PolyglOTT.ttf);
 }
