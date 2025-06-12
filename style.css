@@ -1,0 +1,245 @@
+/* Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  span {
+    color: #fca311;
+    font-weight: 800;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Header */
+  .header {
+    background: #fff8ec;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-container {
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #e07b00;
+  }
+  .logo-img {
+    width: 60px;
+    height: auto;
+  }
+  .logo-img:hover:hover {
+    transition: transform 0.5s ease;
+    transform: rotateY(360deg);
+  }
+  .nav-desktop {
+    display: flex;
+    gap: 1.5rem;
+    font-size: large;
+    font-weight: 600;
+  }
+  .nav-desktop a:hover {
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: #e07b00;
+  }
+  .cta-button {
+    background: #fca311;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  .cta-button:hover {
+    background: #e07b00;
+  }
+  
+  /* Hero */
+  .hero {
+    background: #ffe8c3;
+    padding: 3rem 1rem;
+  }
+  .hero-content {
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  .hero-text {
+    flex: 1;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .hero-img {
+    max-width: 50%;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+  .section.alt {
+    background: #f9f9f9;
+  }
+  .section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .section p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .section-img {
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #fca311;
+  }
+  .section-img:hover {
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+  }
+  .tentang-content {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .tentang-content.reverse {
+    flex-direction: row-reverse;
+  }
+  /* Footer */
+  .footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-desktop {
+      display: none;
+    }
+  
+    .hero-content,
+    .tentang-content {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .hero-img,
+    .section-img {
+      width: 100%;
+      margin: 0 auto;
+    }
+    #Contact td {
+        align-content: space-between;
+    }
+  }
+  #Contact {
+    justify-content: space-between;
+    margin: 90px;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    row-gap: 16px;
+    padding-top: 1px;
+    padding: 16px 0;
+    padding-bottom: 16px;
+    padding-block: 40px 16px 40px 16px;
+    content: 1600px;
+    color: rgb(50, 56, 54);
+    background-color: brown;
+}
+#Contact th{
+    size: 200px;
+}
+#Contact img{
+    width: 40px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid;
+    transition: 0.6s;
+    box-shadow: 4px 3px 3px;
+    padding: 0.6rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+#Contact tr {
+
+}
+#Contact td, img :hover{
+    background-color: #fff;
+    color: #000;
+}
+.cu-button {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid;
+    transition: 0.6s;
+    box-shadow: 4px 3px 3px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    background-color: #fff;
+}
+.cu-button:hover {
+    background: 
+}
+.logo {
+    width: 40px;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    padding: 5px 20px;
+    border: 1px solid;
+    transition: 0.6s;
+    box-shadow: 4px 3px 3px;
+    padding: 0.6rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+#medsos {
+    padding: 5px 20px;
+    justify-content: space-between;
+}
+.medsos h1{
+    color: #fff;
+}
+.medsos {
+    background-color: brown;
+}
